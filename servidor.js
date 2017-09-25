@@ -28,7 +28,7 @@ app.post('/api/photo', function (req, res) {
         var exec = require("child_process").exec;
         //var child = exec('java -jar ./hastang.jar ./uploads/userPhoto-1506284997655.txt ./uploads/salidauserPhoto-1506284997655.txt',
         console.log("hasta ahorita el archivo se sigue llamando"+nom)
-        var child = exec('java -jar ./hastang.jar ./uploads/' + nom + ' ./uploads/salida' + nom,
+        var child = exec('java -jar ./hastang.jar ./uploads/userPhoto-1506346887933.txt' + ' ./uploads/salidauserPhoto-1506346887933.txt',
             function (error, stdout, stderr) {
                 console.log('Output -> ' + stdout);
                 res.end('Archivo subido exitosamente'+stdout);
