@@ -1,6 +1,6 @@
 var port= process.env.PORT || 3000;  
 var express = require("express");
-var multer = require('multer');
+var multer = require("multer");
 var app = express();
 var nom = ' ';
 var storage = multer.diskStorage({
@@ -25,7 +25,7 @@ app.post('/api/photo', function (req, res) {
             return res.end("Error al subir archivo");
         }
         //res.end("Archivo subido exitosamente");
-        var exec = require('child_process').exec;
+        var exec = require("child_process").exec;
         //var child = exec('java -jar ./hastang.jar ./uploads/userPhoto-1506284997655.txt ./uploads/salidauserPhoto-1506284997655.txt',
         console.log("hasta ahorita el archivo se sigue llamando"+nom)
         var child = exec('java -jar ./hastang.jar ./uploads/' + nom + ' ./uploads/salida' + nom,
