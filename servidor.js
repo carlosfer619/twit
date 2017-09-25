@@ -41,6 +41,4 @@ app.post('/api/photo', function (req, res) {
     });
 });
 
-app.listen(port, function () {
-    console.log("Working on port 8080");
-});
+app.listen(port);
