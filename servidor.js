@@ -1,3 +1,4 @@
+var port= process.env.PORT || 3000;  
 var express = require("express");
 var multer = require('multer');
 var app = express();
@@ -40,6 +41,6 @@ app.post('/api/photo', function (req, res) {
     });
 });
 
-app.listen(8080, function () {
+app.listen(port, function () {
     console.log("Working on port 8080");
 });
