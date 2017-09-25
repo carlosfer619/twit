@@ -4,20 +4,12 @@
   "description": "",
   "main": "servidor.js",
   "scripts": {
+    "start": "node servidor.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
     "express": "4.15.5",
-    "multer": "1.3.0"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/carlosfer619/twit.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/carlosfer619/twit/issues"
-  },
-  "homepage": "https://github.com/carlosfer619/twit#readme"
+    "multer": "1.3.0",
+    "child_process": "1.0.2"
+  }
 }
